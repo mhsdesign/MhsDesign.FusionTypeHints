@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "mhsdesign/fusiontypehints",
+    "require": {
+        "neos/flow": "*",
+        "attitude/duck-types-php": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "MhsDesign\\FusionTypeHints\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "MhsDesign.FusionTypeHints"
+        }
+    }
+}
