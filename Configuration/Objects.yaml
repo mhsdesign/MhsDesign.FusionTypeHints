@@ -1,0 +1,4 @@
+MhsDesign\FusionTypeHints\Fusion\TypedRuntime:
+  properties:
+    fusionSettings:
+      setting: 'Neos.Fusion'

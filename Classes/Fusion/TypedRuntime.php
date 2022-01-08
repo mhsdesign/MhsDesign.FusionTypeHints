@@ -10,6 +10,22 @@ use Neos\Fusion\Core\Runtime;
 class TypedRuntime extends Runtime
 {
     /**
+     * Empty override, to avoid injection settings of this 3. party package
+     */
+    public function injectSettings(array $settings)
+    {
+    }
+
+    /**
+     * Inject settings of the Neos.Fusion package, and let the original runtime handle them.
+     * Configured via Objects.yaml
+     */
+    public function injectFusionSettings(array $settings)
+    {
+        parent::injectSettings($settings);
+    }
+
+    /**
      * A wrapper around Runtime->evaluate for general paths
      * If a relative @ type path exists to the $fusionPath,
      * The library attitude\duck-types-php will then check if the path value complies to the type annotation
