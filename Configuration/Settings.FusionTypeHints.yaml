@@ -1,0 +1,6 @@
+
+MhsDesign:
+  FusionTypeHints:
+    aop:
+      # This flag will make it possible to use the TypedRuntime via the default FusionView.
+      enableTypedRuntimeForFusionService: false
